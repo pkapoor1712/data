@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "pk-nyc-data-factory"
+		},
+		"AzureSqlDatabase_password": {
+			"value": ""
+		},
+		"linkedservice_accountKey": {
+			"value": ""
+		},
+		"linkedservicebronze_accountKey": {
+			"value": ""
+		},
+		"ls_dataset_accountKey": {
+			"value": ""
+		},
+		"ls_sinkcsv_accountKey": {
+			"value": ""
+		},
+		"orderlinkedservice_accountKey": {
+			"value": ""
+		},
+		"sinklinkedservice_accountKey": {
+			"value": ""
+		},
+		"sourcedatals_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "pksqlserver1.database.windows.net"
+		},
+		"AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "pksqldatabase"
+		},
+		"AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "pkadmin"
+		},
+		"linkedservice_properties_typeProperties_url": {
+			"value": "https://pknycstorageacc.dfs.core.windows.net/"
+		},
+		"linkedservicebronze_properties_typeProperties_url": {
+			"value": "https://pknycstorageacc.dfs.core.windows.net/"
+		},
+		"ls_dataset_properties_typeProperties_url": {
+			"value": "https://pknycstorageacc.dfs.core.windows.net/"
+		},
+		"ls_sinkcsv_properties_typeProperties_url": {
+			"value": "https://pknycstorageacc.dfs.core.windows.net/"
+		},
+		"nycweb_properties_typeProperties_url": {
+			"value": "https://d37ci6vzurychx.cloudfront.net/"
+		},
+		"orderlinkedservice_properties_typeProperties_url": {
+			"value": "https://pknycstorageacc.dfs.core.windows.net/"
+		},
+		"sinklinkedservice_properties_typeProperties_url": {
+			"value": "https://pknycstorageacc.dfs.core.windows.net/"
+		},
+		"sourcedatals_properties_typeProperties_url": {
+			"value": "https://pknycstorageacc.dfs.core.windows.net/"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/8b3fee20-62e0-4157-bbdd-af23d52b55b6/resourceGroups/pk-resource-group/providers/Microsoft.Storage/storageAccounts/pknycstorageacc"
+		}
+	}
+}
