@@ -1,0 +1,31 @@
+{
+	"name": "greater9dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "nycweb",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_greatermonth": {
+				"type": "String"
+			},
+			"p_year": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "trip-data/yellow_tripdata_@{dataset().p_year}-@{dataset().p_greatermonth}.parquet",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

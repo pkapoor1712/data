@@ -1,0 +1,22 @@
+{
+	"name": "table_last_incremental_load",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "last_load_date",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "increment_load_date"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

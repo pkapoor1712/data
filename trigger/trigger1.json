@@ -1,0 +1,24 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "increment pipeline 2",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/sourcedata/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8b3fee20-62e0-4157-bbdd-af23d52b55b6/resourceGroups/pk-resource-group/providers/Microsoft.Storage/storageAccounts/pknycstorageacc",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

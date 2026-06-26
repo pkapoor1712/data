@@ -1,0 +1,15 @@
+{
+	"name": "pk-nyc-data-factory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6c25ca3b-ead2-47aa-8770-72f8e16b14a3",
+		"tenantId": "66e90f23-49d6-4e4b-b2a0-d109ce6c4445"
+	}
+}
